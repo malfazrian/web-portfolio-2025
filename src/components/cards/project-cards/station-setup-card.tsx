@@ -10,7 +10,7 @@ const StationSetup = () => {
         <div className="relative flex justify-between w-full h-full items-stretch flex-col">
           <div className="absolute h-full w-full aspect-[578/433] shadow-2xl rounded-lg">
             <Image
-              src={"/projects/your-company.png"}
+              src={"/projects/your-company.PNG"}
               alt={"Your Company landing page example"}
               fill
               style={{
