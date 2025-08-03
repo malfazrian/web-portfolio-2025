@@ -6,23 +6,23 @@ import { silka } from "@/fonts";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "Joshua Brigati - Portfolio",
-  description: "A portfolio of Joshua Brigati, a Front-end Software Engineer based in Austin, Texas.",
-  authors: [
-    { name: "Joshua Brigati", url: "www.joshuabrigati.com" },
-  ],
+  title: "Moh Alfazrian - Portfolio",
+  description:
+    "A portfolio of Moh Alfazrian, a Full-stack Web Developer based in Tangerang, Indonesia.",
+  authors: [{ name: "Moh Alfazrian", url: "www.malfazrian.com" }],
   openGraph: {
-    title: "Joshua Brigati - Portfolio",
-    description: "A portfolio of Joshua Brigati, a Front-end Software Engineer based in Austin, Texas.",
-    url: "https://www.joshuabrigati.com",
-    siteName: "Joshua Brigati - Portfolio",
+    title: "Moh Alfazrian - Portfolio",
+    description:
+      "A portfolio of Moh Alfazrian, a Full-stack Web Developer based in Tangerang, Indonesia.",
+    url: "https://www.malfazrian.com",
+    siteName: "Moh Alfazrian - Portfolio",
     type: "website",
     images: [
       {
-        url: "https://www.joshuabrigati.com/Screenshot.png",
+        url: "https://www.malfazrian.com/Screenshot.png",
         width: 3410,
         height: 2072,
-        alt: "Joshua Brigati - Portfolio",
+        alt: "Moh Alfazrian - Portfolio",
       },
     ],
   },
@@ -37,16 +37,18 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${silka.className}`}>
         <ThemeProvider attribute="class">
-          <div style={{
-            flex: "none",
-            height: "100%",
-            left: "calc(50.00000000000002% - 100% / 2)",
-            pointerEvents: "none",
-            position: "fixed",
-            top: "0",
-            width: "100%",
-            zIndex: "4",
-          }}>
+          <div
+            style={{
+              flex: "none",
+              height: "100%",
+              left: "calc(50.00000000000002% - 100% / 2)",
+              pointerEvents: "none",
+              position: "fixed",
+              top: "0",
+              width: "100%",
+              zIndex: "4",
+            }}
+          >
             <div
               style={{
                 width: "100%",

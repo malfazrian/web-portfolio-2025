@@ -3,65 +3,65 @@ import classNames from "classnames";
 
 const jobsData = [
   {
+    role: "Web App Developer",
+    company: "Shipment Report App Project",
+    date: "2025 - Present",
+  },
+  {
     role: "Web Developer",
-    company: "Terraform Labs",
-    date: "2022 - Present",
+    company: "Self-Employed",
+    date: "2021 - Present",
   },
   {
-    role: "Software Engineer",
-    company: "Verb Inc.",
-    date: "2019 - 2022",
+    role: "Data Analyst",
+    company: "JNE",
+    date: "2016 - Present",
   },
   {
-    role: "Jr. Front-End Engineer",
-    company: "PNI Digital Media",
-    date: "2019 - 2019",
-  },
-  {
-    role: "Software Engineer",
-    company: "Factom Inc.",
-    date: "2018 - 2019",
+    role: "Power Platform Developer",
+    company: "Daily Activity App Project",
+    date: "2025",
   },
 ];
 
-const JobItem = ({
-  job,
-  active
-}: {
-  job: any;
-  active?: boolean;
-}) => {
-  const { role, company, date} = job;
+const JobItem = ({ job, active }: { job: any; active?: boolean }) => {
+  const { role, company, date } = job;
 
   return (
-    <div
-      className="flex justify-between flex-col items-stretch md:flex-row md:items-center py-4 gap-3 md:gap-2"
-    >
+    <div className="flex justify-between flex-col items-stretch md:flex-row md:items-center py-4 gap-3 md:gap-2">
       <div className="flex flex-col gap-1">
-        <h5 className={classNames(
-          "block text-xs md:text-md md:hidden font-medium dark:text-white text-black",
-          { 'opacity-35': !active, 'opacity-65': active }
-        )}>
+        <h5
+          className={classNames(
+            "block text-xs md:text-md md:hidden font-medium dark:text-white text-black",
+            { "opacity-35": !active, "opacity-65": active }
+          )}
+        >
           {date}
         </h5>
-        <h1 className={classNames(
-          "text-3xl md:text-4xl font-medium dark:text-white text-black text-left w-fit",
-          { 'line-through opacity-55': !active, 'opacity-100': active }
-        )}>
+        <h1
+          className={classNames(
+            "text-3xl md:text-4xl font-medium dark:text-white text-black text-left w-fit",
+            { "line-through opacity-55": !active, "opacity-100": active }
+          )}
+        >
           {role}
         </h1>
       </div>
       <div className="flex flex-col md:items-end md:text-right">
-        <h3 className={classNames(
-          "text-sm lg:text-lg font-medium dark:text-white text-black",
-          { 'opacity-65': !active, 'opacity-80': active }
-        )}>
+        <h3
+          className={classNames(
+            "text-sm lg:text-lg font-medium dark:text-white text-black",
+            { "opacity-65": !active, "opacity-80": active }
+          )}
+        >
           {company}
         </h3>
-        <h5 className={classNames(
-          "hidden md:block text-xs lg:text-md font-medium dark:text-white text-black",
-          { 'opacity-35': !active, 'opacity-65': active }
-        )}>
+        <h5
+          className={classNames(
+            "hidden md:block text-xs lg:text-md font-medium dark:text-white text-black",
+            { "opacity-35": !active, "opacity-65": active }
+          )}
+        >
           {date}
         </h5>
       </div>
@@ -75,7 +75,7 @@ const JobsCard = () => {
       <div className="static h-full flex flex-col gap-6 p-8 justify-start">
         <div className="flex flex-col items-start gap-1">
           <h4 className="text-xs font-medium opacity-60 uppercase">
-            6 Years of
+            4 Years of
           </h4>
           <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90 text-center">
             Experience
@@ -83,10 +83,9 @@ const JobsCard = () => {
         </div>
         <div className="flex flex-col relative z-10 lg:justify-around">
           <JobItem job={jobsData[0]} active />
-
-          {jobsData.slice(1).map((job, index) => (
-            <JobItem key={index} job={job} />
-          ))}
+          <JobItem job={jobsData[1]} active />
+          <JobItem job={jobsData[2]} active />
+          <JobItem job={jobsData[3]} />
         </div>
       </div>
     </CardWrapper>

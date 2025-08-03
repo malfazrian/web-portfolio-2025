@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import { Badge } from "../../shadcn/Badge";
 import SendmessageIcon from "../../lottie-ui/send-message";
 import CardWrapper from "../card-wrapper";
@@ -16,7 +16,7 @@ const StationLanding = () => {
               style={{
                 objectFit: "cover",
                 objectPosition: "top",
-                borderRadius: "8px"
+                borderRadius: "8px",
               }}
             />
           </div>
@@ -27,7 +27,7 @@ const StationLanding = () => {
             <span className="flex gap-1">
               <Image
                 src="/companies/01_Terra_color.png"
-                alt="TFL logo"
+                alt="Your logo"
                 height={12}
                 width={16}
               />
@@ -38,7 +38,10 @@ const StationLanding = () => {
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
               Station Landing Page
             </h1>
-            <SendmessageIcon link="https://station.money/" lottieName="StationLandingIcon" />
+            <SendmessageIcon
+              link="https://station.money/"
+              lottieName="StationLandingIcon"
+            />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -60,7 +63,7 @@ const StationLanding = () => {
         </div>
       </div>
     </CardWrapper>
-  )
-}
+  );
+};
 
-export default StationLanding
+export default StationLanding;

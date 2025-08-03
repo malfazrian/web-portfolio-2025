@@ -1,0 +1,25 @@
+.highlight__rmG8A {
+  position: absolute;
+  height: 32px;
+  width: 49px;
+  border-radius: 16px;
+  z-index: -1;
+  background: var(--highlightBackground);
+  border: var(--filterBorder);
+  transition: left 0.3s ease;
+}
+
+.option__mlVkw {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 32px;
+  transition: opacity 0.3s ease 0s;
+  color: var(--filterText);
+}
+
+.option__mlVkw:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}

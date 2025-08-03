@@ -20,7 +20,7 @@
 html {
   overflow-x: hidden;
   &::-webkit-scrollbar {
-    width: 0px
+    width: 0px;
   }
 
   &::-webkit-scrollbar-track {
@@ -28,46 +28,46 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,.05);
-    border-radius: 99px
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 99px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,.1)
+    background: rgba(255, 255, 255, 0.1);
   }
 }
 
 :root {
   --background: #e0dfe3;
-	--widgetPlaceholder: #ede9e9;
-	--filterBackground: rgba(0, 0, 0, 0.04);
-	--highlightBackground: #ffffff;
-	--filterText: #0d1117;
+  --widgetPlaceholder: #ede9e9;
+  --filterBackground: rgba(0, 0, 0, 0.04);
+  --highlightBackground: #ffffff;
+  --filterText: #0d1117;
   --grid-line-color: #00000029;
 }
 
 .dark {
   --background: #090c10;
-	--widgetBackground: #0d1117;
-	--widgetPlaceholder: #515963;
-	--filterBackground: transparent;
-	--highlightBackground: #21262d;
-	--filterText: #f0f2f8;
-	--filterBorder: 2px #30363d solid;
+  --widgetBackground: #0d1117;
+  --widgetPlaceholder: #515963;
+  --filterBackground: transparent;
+  --highlightBackground: #21262d;
+  --filterText: #f0f2f8;
+  --filterBorder: 2px #30363d solid;
   --grid-line-color: #ffffff29;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
-  background: #090c10;
+  background: var(--background);
   color: rgb(30 27 75/1);
   line-height: 19.2px;
 }
 
 *:focus {
-  outline: none
+  outline: none;
 }
 
 .dark {
@@ -91,17 +91,51 @@ a {
 }
 
 .react-grid-item.react-grid-placeholder {
-	opacity: 1;
-	z-index: -1 !important;
-	border-radius: 24px !important;
-	background: var(--widgetPlaceholder) !important;
+  opacity: 1;
+  z-index: -1 !important;
+  border-radius: 24px !important;
+  background: var(--widgetPlaceholder) !important;
 }
 
 .react-grid-item {
-	transition: all 0ms ease;
-	will-change: transform;
+  transition: all 0ms ease;
+  will-change: transform;
 }
 
 .react-grid-item.react-draggable-dragging {
-	transition: none;
+  transition: none;
+}
+
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 1px;
+
+  .shine {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(0, 162, 255, 0.3),
+      rgba(128, 0, 255, 0.2),
+      transparent 70%
+    );
+    transition: background 0.15s ease-out;
+    z-index: 1;
+  }
+
+  &.light {
+    .shine {
+      background: radial-gradient(
+        circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(0, 162, 255, 0.25),
+        rgba(128, 0, 255, 0.2),
+        transparent 70%
+      );
+    }
+  }
 }

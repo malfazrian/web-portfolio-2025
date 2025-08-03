@@ -1,0 +1,200 @@
+html {
+    color: #555;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    background-color: #F5EEE6;
+}
+
+.bg-light {
+    background-color: #db9191 !important;
+}
+
+.brand-wr {
+    background-color: #db9191;
+    color: #f5eee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.brand-logo-wr {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.brand-logo-wr img {
+    height: 50px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: #f5eee6;
+    border-bottom: solid 3px #db9191;
+}
+
+.nav-link:hover {
+    color: #f5eee6;
+    border-bottom: solid 3px#f5eee6;
+}
+
+nav .btn-primary {
+    background-color: #F5EEE6;
+    color: #db9191;
+    scale: 1;
+}
+
+nav .btn-primary:hover {
+    scale: 1.1;
+    transition: all 0.5s ease-in;
+}
+
+.carousel-item {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    bottom: 0;
+    border: none;
+    background-color: #F5EEE6;
+}
+
+.card:hover {
+    position: relative;
+    bottom: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.btn-primary:focus {
+    background-color: #db9191;
+    border: solid 1px #db9191;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #db9191;
+    border: solid 1px #db9191;
+}
+
+.btn-primary:hover {
+    background-color: #F5EEE6;
+    color: #db9191;
+    border: solid 1px #db9191;
+}
+
+.btn-secondary {
+    background-color: #F5EEE6;
+    color: #db9191;
+    border: solid 1px #db9191;
+}
+
+.btn-secondary:hover {
+    background-color: #db9191;
+    color: white;
+    border: solid 1px #db9191;
+}
+
+.btn-secondary:focus {
+    background-color: #db9191;
+    color: white;
+    border: solid 1px #db9191;
+    box-shadow: none;
+}
+
+.testimonials {
+    background-color: #db9191;
+    color: #fff;
+}
+
+.testimony {
+    min-height: 30rem;
+    width: 75%;
+}
+
+.profil-wrap {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cta {
+    background-color: #F5EEE6;
+}
+
+.custom-shape-divider-top-1708349281 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1708349281 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1708349281 .shape-fill {
+    fill: #F5EEE6;
+}
+
+footer {
+    background-color: #db9191;
+    color: white;
+    position: relative;
+}
+
+footer .container {
+    margin: auto;
+}
+
+footer .brand {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+i,
+footer svg {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: auto;
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+}

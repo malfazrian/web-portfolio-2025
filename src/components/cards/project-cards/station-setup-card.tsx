@@ -10,13 +10,13 @@ const StationSetup = () => {
         <div className="relative flex justify-between w-full h-full items-stretch flex-col">
           <div className="absolute h-full w-full aspect-[578/433] shadow-2xl rounded-lg">
             <Image
-              src={"/projects/Station-Setup.png"}
-              alt={"Station landing page example"}
+              src={"/projects/your-company.png"}
+              alt={"Your Company landing page example"}
               fill
               style={{
-                objectFit: "cover",
+                objectFit: "fill",
                 objectPosition: "top",
-                borderRadius: "8px"
+                borderRadius: "8px",
               }}
             />
           </div>
@@ -31,14 +31,17 @@ const StationSetup = () => {
                 height={12}
                 width={16}
               />
-              Terraform Labs
+              Your Company
             </span>
           </h4>
           <div className="w-full flex gap-2 items-center">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
-              Station Setup Page
+              Your Company Landing Page
             </h1>
-            <SendmessageIcon link="https://setup-station.terra.money/" lottieName="StationSetupIcon" />
+            <SendmessageIcon
+              link="https://api.whatsapp.com/send?phone=6285173071153&text=Hi%20Ryan%2C%20I%E2%80%99m%20planning%20to%20create%20a%20website%20and%20would%20love%20to%20discuss%20the%20details%20with%20you."
+              lottieName="StationSetupIcon"
+            />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
             <Badge variant="default" className="text-xs">
@@ -60,7 +63,7 @@ const StationSetup = () => {
         </div>
       </div>
     </CardWrapper>
-  )
-}
+  );
+};
 
-export default StationSetup
+export default StationSetup;
