@@ -66,6 +66,7 @@ const Grid = () => {
             sm: 4,
           }}
           isDraggable={true}
+          draggableCancel="a, button, .no-drag"
           rowHeight={height}
           onBreakpointChange={(breakpoint: any) => {
             setHeight(heights[breakpoint]);
